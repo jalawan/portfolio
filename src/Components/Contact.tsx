@@ -9,7 +9,7 @@ import facebook from '../assets/socials/facebook.png'
 const Contact = () => {
     const formRef = useRef<HTMLFormElement | null>(null);
   const [done, setDone] = useState(false)
-   const [loading, setLoading] = useState(false);
+   const [, setLoading] = useState(false);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 if (!formRef.current) return;
@@ -44,7 +44,7 @@ if (!formRef.current) return;
                 <div>
                     <h3 className='text-3xl text-fuchsia-400'> Contact with me</h3>
                     
-                    {/* social icons */}
+                  {/* social icons */}
                     <div className="flex mx-3">
                         <a href="https://github.com/jalawan" target="_blank" rel="noreferrer">
                         <img src={github} alt="" />

@@ -1,9 +1,6 @@
-import facebook from '../assets/socials/facebook.png';
-import github from '../assets/socials/github.png';
-import twitter from '../assets/socials/twitter.png';
-import linkedin from '../assets/socials/linkedin.png';
+import React from 'react';
 
-const Footer = () => {
+const Footer : React.FC = () => {
   let date = new Date();
   return (
     <>
