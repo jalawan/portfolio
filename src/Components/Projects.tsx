@@ -2,6 +2,7 @@
 import { StarsIcon } from 'lucide-react';
 import Lemcee from '../assets/Lemcee.png';
 import Banje_Dishes from '../assets/Banje Dishes.png';
+import Feeds from '../assets/Feeds.png';
 
  const Projects = () => {
     const projects=[
@@ -20,6 +21,14 @@ import Banje_Dishes from '../assets/Banje Dishes.png';
             image:Banje_Dishes,
             link:  "",
             github:"https://github.com/jalawan/Banje-Restaurant" ,
+        },
+        {
+            title:"Chicken Feeds",
+            description:
+            "Chiken Feeds is a poultry feed management system that assists poultry farmers in their day to day operations. I developed using React With Typescript and Hono & MSQL for the backend",
+            image:Feeds,
+            link:  "",
+            github:"https://github.com/jalawan/Kuku-Feeds" ,
         }
     ]
   return (
@@ -29,7 +38,7 @@ import Banje_Dishes from '../assets/Banje Dishes.png';
                 <h1 className='flex gap-3 text-4xl p-10  text-cyan-400 font-extrabold'> <StarsIcon/> My Projects <StarsIcon/>   </h1>
             </div>
         </div>
-            <div className='grid grid-cols-1 md.grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center text-white'>
                 {projects.map((project,index)=>{
                     return(
                         <div 
