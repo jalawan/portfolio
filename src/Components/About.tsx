@@ -57,7 +57,7 @@ const About = () => {
         </div>
         <div>
                 <h1 className='text-center text-3xl font-extrabold  text-cyan-400 p-10'>Certifications</h1>
-                <div className='grid md:grid-cols-3 my-8 gap-5 cursor-pointer'>
+                <div className='grid md:grid-cols-3 my-8 ml-5 cursor-pointer'>
                     {
                         certifications.map(cert => (
                             <div key={cert.id} className='service-card flex flex-col justify-center items-center p-6 gap-6 text-center text-white hover-3d'>
